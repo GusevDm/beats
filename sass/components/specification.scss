@@ -12,7 +12,7 @@
         cursor: pointer;
 
         &::before {
-            content: url(../../img/items/spec.svg);
+            content: url(./../../img/items/spec.svg);
             position: absolute;
             top: 50%;
             left: 50%;
@@ -64,7 +64,7 @@
 
 @each $var in (bluetooth, road, charge, kg, patent) {
     .specification__#{$var}::before {
-        content: url(../../img/specification/#{$var}.svg);
+        content: url(./../../img/specification/#{$var}.svg);
         margin-right: 16px;
     }
 }
