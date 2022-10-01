@@ -702,7 +702,7 @@ a {
 }
 
 .order-section {
-  background: url(./../../img/bg/bg-order.png);
+  background: url(./../img/bg/bg-order.png);
   color: #fff;
 }
 
@@ -938,16 +938,16 @@ a {
   margin-right: 10px;
 }
 .links .link_vk {
-  background: url(./../../img/links/vk.svg);
+  background: url(./../img/links/vk.svg);
 }
 .links .link_fb {
-  background: url(./../../img/links/fb.svg);
+  background: url(./../img/links/fb.svg);
 }
 .links .link_in {
-  background: url(./../../img/links/in.svg);
+  background: url(./../img/links/in.svg);
 }
 .links .link_tv {
-  background: url(./../../img/links/tv.svg);
+  background: url(./../img/links/tv.svg);
 }
 
 .products {
@@ -1049,7 +1049,7 @@ a {
   cursor: pointer;
 }
 .specification__button::before {
-  content: url(./../../img/items/spec.svg);
+  content: url(./../img/items/spec.svg);
   position: absolute;
   top: 50%;
   left: 50%;
