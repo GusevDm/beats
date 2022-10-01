@@ -1,5 +1,5 @@
 .hero {
-    background: url(./../../img/content/main-background.png) right 20% bottom 40% no-repeat;
+    background: url(./../img/content/main-background.png) right 20% bottom 40% no-repeat;
     background-color: $bg-grey;
     height: 100vh;
     min-height: 600px;
@@ -17,7 +17,7 @@
 
     
     &:before {
-        content: url(./../../img/decor/rect.svg);
+        content: url(./../img/decor/rect.svg);
         position: absolute;
         bottom: -22.65px;
         right: 0;

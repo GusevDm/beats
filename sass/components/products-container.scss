@@ -2,7 +2,7 @@
     position: relative;
 
     &::before {
-        content: url(./../../img/decor/four.svg);
+        content: url(./../img/decor/four.svg);
         position: absolute;
         bottom: -20px;
         right: 0;
