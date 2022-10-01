@@ -1,0 +1,42 @@
+@import "./setting/normalize.scss";
+@import "./vars.scss";
+@import "./setting/media.scss";
+@import "./setting/fonts.scss";
+@import "./setting/base.scss";
+
+
+// components
+@import "./components/hero.scss";
+@import "./components/container.scss";
+@import "./components/header.scss";
+@import "./components/menu.scss";
+@import "./components/hero__title.scss";
+@import "./components/button.scss";
+@import "./components/feature.scss";
+
+@import "./components/section.scss";
+@import "./components/headline.scss";
+@import "./components/benefits.scss";
+@import "./components/benefit.scss";
+@import "./components/benefits-container.scss";
+@import "./components/reviews-container.scss";
+@import "./components/reviews.scss";
+@import "./components/reviews__switcher.scss";
+@import "./components/order-section.scss";
+@import "./components/form.scss";
+@import "./components/radio.scss";
+@import "./components/fix-nav.scss";
+@import "./components/video.scss";
+@import "./components/video-container.scss";
+@import "./components/video-section.scss";
+@import "./components/phone-number.scss";
+@import "./components/footer.scss";
+@import "./components/map.scss";
+@import "./components/contacts-section.scss";
+@import "./components/contacts-container.scss";
+@import "./components/links.scss";
+@import "./components/products.scss";
+@import "./components/products-section.scss";
+@import "./components/specification.scss";
+@import "./components/products-container.scss";
+@import "./components/command.scss";

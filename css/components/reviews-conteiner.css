@@ -1,0 +1,9 @@
+.reviews-conteiner {
+  position: relative;
+}
+.reviews-conteiner:before {
+  content: url(../../img/decor/ellipse.svg);
+  position: absolute;
+  bottom: -17.5px;
+  left: 0;
+}

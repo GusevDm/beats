@@ -1,0 +1,16 @@
+.phone-number {
+    display: flex;
+    align-items: center;
+}
+
+.phone-number__pic-elem {
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+}
+
+.phone-number {
+      font-size: 18px;
+      text-decoration: none;
+      color: $font-black;
+}

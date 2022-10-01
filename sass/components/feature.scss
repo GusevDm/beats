@@ -1,0 +1,19 @@
+.feature {
+    display: flex;
+
+    &__item {
+        display: flex;
+        max-width: 166px;
+        margin-right: 8px;
+    }
+    
+    &__pic {
+        width: 41px;
+        height: 41px;
+    }
+
+    &__text {
+        padding-left: 11px;
+    }
+}
+

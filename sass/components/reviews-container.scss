@@ -1,0 +1,12 @@
+.reviews-container {
+    position: relative;
+    
+    &:before {
+        content: url(../../img/decor/ellipse.svg);
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        bottom: -17.5px;
+        left: 0;
+    }
+}

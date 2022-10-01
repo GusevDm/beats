@@ -1,0 +1,17 @@
+.links {
+    display: flex;
+
+    &__link {
+        width: 30px;
+        height: 30px;
+        display: block;
+        margin-right: 10px;
+    }
+
+    @each $link in (vk, fb, in, tv) {
+        .link_#{$link} {
+            background: url(../../img/links/#{$link}.svg);
+        }
+    }
+
+}

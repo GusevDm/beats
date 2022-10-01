@@ -1,0 +1,52 @@
+.command {
+    display: flex;
+
+    .people {
+        margin-right: 20px;
+        text-align: center;
+        
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &__image {
+            width: 220px;
+            height: 290px;
+        }
+
+        &__name {
+            font-size: 18px;
+            font-weight: 700;
+            vertical-align: baseline;
+            margin-top: 25px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .pointer {
+                margin-left: 4px;
+                display: inline-block;
+            }
+            
+            &:hover ~ .people__desc {
+                display: block;
+            }
+
+        }
+
+        &__desc {
+            margin-top: 11px;
+            color: $font-grey;
+            display: none;
+
+            &--title {
+                color: $font-black;
+                margin-top: 11px;
+                margin-bottom: 4px;
+            }
+        }
+    }
+}
+
+ 

@@ -1,0 +1,21 @@
+.section {
+
+    .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        min-height: 600px;
+    }
+
+    &__title {
+        font-family: $fontPlay;
+        font-size: 48px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 53px;
+        text-align: center;
+    }
+
+}

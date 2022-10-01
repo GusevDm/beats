@@ -1,0 +1,25 @@
+.hero {
+    background: url(/img/content/main-background.png) right 20% bottom 40% no-repeat;
+    background-color: $bg-grey;
+    height: 100vh;
+    min-height: 600px;
+    margin: 0 auto;
+    color: $font-black;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 24px 0 65px 0;
+    position: relative;
+
+    
+    &:before {
+        content: url(../../img/decor/rect.svg);
+        position: absolute;
+        bottom: -22.65px;
+        right: 0;
+    }
+}

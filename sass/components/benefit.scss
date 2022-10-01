@@ -1,0 +1,39 @@
+.benefit {
+    text-align: center;
+    
+    &:last-child {
+        margin-right: 0;
+    }
+
+
+    &__image-wrapper {
+        display: inline-block;
+        width: 128px;
+        height: 128px;
+        background: $bg-grey;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__pic {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__title {
+        margin-top: 24px;
+        font-size: 24px;
+        font-weight: 700;
+        font-family: $fontPlay;
+    }
+
+    &__desc {
+        color: $font-grey;
+        margin-top: 7px;
+    }
+}

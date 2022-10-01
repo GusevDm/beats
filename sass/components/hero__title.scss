@@ -1,0 +1,25 @@
+.hero__title {
+
+    width: 400px;
+
+    .hero__main-title {
+        font-family: $fontPlay;
+        font-weight: 700;
+        font-size: 48px;
+        text-transform: uppercase;
+    }
+
+    .hero__desc {
+        font-family: 'Alegreya Sans';
+        font-weight: 400;
+        font-size: 21px;    
+        margin-top: 22px;
+        width: 330px;
+    }
+
+    .button {
+        margin-top: 36px;
+    }
+
+    
+}

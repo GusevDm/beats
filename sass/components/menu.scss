@@ -1,0 +1,12 @@
+.menu {
+
+    &__list {
+        width: 639px;
+        display: flex;
+        justify-content: space-between;
+        font-family: $fontPlay;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+}

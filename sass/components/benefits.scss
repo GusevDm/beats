@@ -1,0 +1,32 @@
+.benefits {
+    display: flex;
+    margin-top: 62px;
+
+
+    &__item {
+        flex: 1;
+        padding: 0 3%;
+        position: relative;
+
+        &:last-child {
+            padding-right: 0;
+
+            &::before {
+                display: none;
+            }
+        }
+        
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &::before {
+            position: absolute;
+            top: 52px;
+            right: 0px;
+            content: url(../../img/decor/splitter.svg);
+            transform: translate(50%);
+        }
+    }
+
+}

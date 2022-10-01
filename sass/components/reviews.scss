@@ -1,0 +1,32 @@
+.reviews {
+    &__display {
+        background-color: $bg-grey;
+        padding: 42px;
+    }
+
+    &__display-inner {
+        display: flex;
+    }
+
+    &__pic {
+        width: 253px;
+        height: 264px;
+        margin-right: 40px;
+    }
+    
+    &__title {
+        margin-top: 32px;
+        @include h3
+    }
+
+    &__text {
+        margin-top: 27px;
+        color: $font-grey;
+    }
+
+    &__author {
+        margin-top: 38px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
