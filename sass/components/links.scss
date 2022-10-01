@@ -10,7 +10,7 @@
 
     @each $link in (vk, fb, in, tv) {
         .link_#{$link} {
-            background: url(../../img/links/#{$link}.svg);
+            background: url(./../../img/links/#{$link}.svg);
         }
     }
 

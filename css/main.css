@@ -376,7 +376,7 @@ a {
 }
 
 .hero {
-  background: url(./img/content/main-background.png) right 20% bottom 40% no-repeat;
+  background: url(./../../img/content/main-background.png) right 20% bottom 40% no-repeat;
   background-color: #f5f5f5;
   height: 100vh;
   min-height: 600px;
@@ -400,7 +400,7 @@ a {
   position: relative;
 }
 .hero__container:before {
-  content: url(../../img/decor/rect.svg);
+  content: url(./../../img/decor/rect.svg);
   position: absolute;
   bottom: -22.65px;
   right: 0;
@@ -569,7 +569,7 @@ a {
   position: absolute;
   top: 52px;
   right: 0px;
-  content: url(../../img/decor/splitter.svg);
+  content: url(./../../img/decor/splitter.svg);
   -webkit-transform: translate(50%);
           transform: translate(50%);
 }
@@ -613,7 +613,7 @@ a {
   position: relative;
 }
 .benefits-container:before {
-  content: url(../../img/decor/tri.svg);
+  content: url(./../../img/decor/tri.svg);
   position: absolute;
   bottom: -16px;
   left: 0;
@@ -623,7 +623,7 @@ a {
   position: relative;
 }
 .reviews-container:before {
-  content: url(../../img/decor/ellipse.svg);
+  content: url(./../../img/decor/ellipse.svg);
   width: 35px;
   height: 35px;
   position: absolute;
@@ -818,7 +818,7 @@ a {
 }
 .radio--checkbox .radio__visible::before {
   content: "";
-  background: url(../../img/marker.svg) center center no-repeat;
+  background: url(./../../img/marker.svg) center center no-repeat;
 }
 
 .fix-nav {
@@ -873,7 +873,7 @@ a {
   position: relative;
 }
 .video-container::before {
-  content: url(../../img/decor/polygon.svg);
+  content: url(./../../img/decor/polygon.svg);
   position: absolute;
   bottom: -29px;
   right: 0;
@@ -938,16 +938,16 @@ a {
   margin-right: 10px;
 }
 .links .link_vk {
-  background: url(../../img/links/vk.svg);
+  background: url(./../../img/links/vk.svg);
 }
 .links .link_fb {
-  background: url(../../img/links/fb.svg);
+  background: url(./../../img/links/fb.svg);
 }
 .links .link_in {
-  background: url(../../img/links/in.svg);
+  background: url(./../../img/links/in.svg);
 }
 .links .link_tv {
-  background: url(../../img/links/tv.svg);
+  background: url(./../../img/links/tv.svg);
 }
 
 .products {
@@ -1127,7 +1127,7 @@ a {
   position: relative;
 }
 .products-container::before {
-  content: url(../../img/decor/four.svg);
+  content: url(./../../img/decor/four.svg);
   position: absolute;
   bottom: -20px;
   right: 0;
