@@ -388,7 +388,7 @@ a {
 }
 
 .hero {
-  background: url(./../../img/content/main-background.png) right 20% center no-repeat, #f5f5f5;
+  background: url(./../img/content/main-background.png) right 20% center no-repeat, #f5f5f5;
   background-size: 34%;
   margin: 0 auto;
   color: #292929;
@@ -928,7 +928,7 @@ a {
   }
 }
 .reviews::before {
-  content: url(./../../img/decor/ellipseWhite.svg);
+  content: url(./../img/decor/ellipseWhite.svg);
   width: 5.1875rem;
   height: 5.1875rem;
   margin: auto;
