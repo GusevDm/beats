@@ -1,25 +1,39 @@
 .hero {
-    background: url(./../img/content/main-background.png) right 20% bottom 40% no-repeat;
-    background-color: $bg-grey;
-    height: 100vh;
-    min-height: 600px;
+    background: url(./../../img/content/main-background.png) right 20% center no-repeat, $bg-grey;
+    background-size: 34%;
     margin: 0 auto;
     color: $font-black;
+
+    @include tablets {
+        background: $bg-grey;
+    }
 }
 
 .hero__container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    padding: 24px 0 65px 0;
+    padding: 1.5rem 0 0 0;
     position: relative;
-
+    justify-content: space-between;
     
+    @include tablets {
+        padding: 1.5625rem 1.625rem 1.625rem 0.75rem;
+    }
+
     &:before {
         content: url(./../img/decor/rect.svg);
         position: absolute;
-        bottom: -22.65px;
+        bottom: -1.4rem;
         right: 0;
     }
+}
+
+
+.hero__img {
+    max-width: 100%;
+    width: 30.5625rem;
+    height: 30.5625rem;
+    position: absolute;
+    right: -4%;
+    top: 15%;
 }

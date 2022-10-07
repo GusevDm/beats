@@ -1,19 +1,25 @@
 .feature {
     display: flex;
+    margin-bottom: 4.0625rem;
 
     &__item {
         display: flex;
-        max-width: 166px;
-        margin-right: 8px;
+        max-width: 10.375rem;
+        margin-right: 0.5rem;
     }
     
     &__pic {
-        width: 41px;
-        height: 41px;
+        width: 2.5625rem;
+        height: 2.5625rem;
     }
 
     &__text {
-        padding-left: 11px;
+        padding-left: 0.6875rem;
     }
+
+    @include tablets {
+        display: none;
+    }    
+    
 }
 

@@ -2,7 +2,7 @@
     display: flex;
 
     .people {
-        margin-right: 20px;
+        margin-right: 1.25rem;
         text-align: center;
         
         &:last-child {
@@ -10,22 +10,22 @@
         }
 
         &__image {
-            width: 220px;
-            height: 290px;
+            max-width: 100%;
+            width: 13.75rem;
         }
 
         &__name {
-            font-size: 18px;
+            font-size: 1.125rem;
             font-weight: 700;
             vertical-align: baseline;
-            margin-top: 25px;
+            margin-top: 1.56rem;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
 
             .pointer {
-                margin-left: 4px;
+                margin-left: 0.25rem;
                 display: inline-block;
             }
             
@@ -36,14 +36,14 @@
         }
 
         &__desc {
-            margin-top: 11px;
+            margin-top: 0.688rem;
             color: $font-grey;
             display: none;
 
             &--title {
                 color: $font-black;
-                margin-top: 11px;
-                margin-bottom: 4px;
+                margin-top: 0.688rem;
+                margin-bottom: 0.25rem;
             }
         }
     }

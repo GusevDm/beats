@@ -1,13 +1,26 @@
 .headline {
 
     &__title {
-        margin-bottom: 18px;
+        margin-bottom: 1.125rem;
+
+        @include tablets {
+            margin-bottom: 0.6875rem;
+        }
+
+        @include phones {
+            font-size: 32px;
+        }
+        
     }
     
     &__subtitle {
         text-align: center;
         color: $font-grey;
         padding: 0 20%;
+
+        @include phones {
+            padding: 0 6%;
+        }
     }
 
 }

@@ -4,9 +4,21 @@
     padding: 0;
 }
 
+html {
+    font-size: $baseFontSize;
+
+    @include tablets {
+        font-size: $baseFontSize - 1px;
+    }
+    
+    @include phones {
+        font-size: $baseFontSize - 2px;
+    }
+
+}
+
 body {
     font-family: "Play", sans-serif;
-    font-size: 16px;
     height: 100%;
     font-weight: 400;
     color: #292929
@@ -27,5 +39,4 @@ a {
 
 .wrapper {
     overflow: hidden;
-    min-width: 940px;
  }

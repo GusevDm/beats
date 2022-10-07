@@ -1,12 +1,32 @@
+
+
 .menu {
 
+    margin: 0 30px;
+    padding-top: 10px;
+
     &__list {
-        width: 639px;
         display: flex;
         justify-content: space-between;
-        font-family: $fontPlay;
-        font-size: 18px;
+        font-family: $fontAlegreya;
+        font-size: 1.125rem;
         font-weight: 400;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__item {
+        margin-right: 1.6875rem;
+        white-space: nowrap;
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    @include tablets {
+        display: none;
     }
 
 }

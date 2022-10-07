@@ -7,7 +7,7 @@
     z-index: $fix-nav;
 
     &__item {
-        margin-bottom: 7px;
+        margin-bottom: 0.4375rem;
         border: 1px solid transparent;
         border-radius: 50%;
 
@@ -22,15 +22,15 @@
     }
 
     &__link {
-        width: 18px;
-        height: 18px;
+        width: 1.125rem;
+        height: 1.125rem;
         display: block;
         position: relative;
 
         &::before {
             content: "";
-            width: 9px;
-            height: 9px;
+            width: 0.5625rem;
+            height: 0.5625rem;
             display: block;
             background: $font-black;
             position: absolute;
@@ -41,5 +41,9 @@
             opacity: 0.6;
         }
     }
+
+    @include tablets {
+        display: none;
+    } 
 }
 

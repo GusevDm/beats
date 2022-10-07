@@ -1,32 +1,68 @@
 .reviews {
+
     &__display {
         background-color: $bg-grey;
-        padding: 42px;
+        padding: 2.625rem;
+
+        @include tablets {
+            padding: 56px 23px 41px 23px;
+        }
     }
 
     &__display-inner {
         display: flex;
+
+        @include tablets {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
     }
 
     &__pic {
-        width: 253px;
-        height: 264px;
-        margin-right: 40px;
+        width: 15.8125rem;
+        height: 16.5rem;
+        margin-right: 2.5rem;
+
+        @include tablets {
+            margin-right: 0;
+            width: 8.125rem;
+            height: 8.125rem;
+        }
     }
     
     &__title {
-        margin-top: 32px;
+        margin-top: 2rem;
         @include h3
     }
 
     &__text {
-        margin-top: 27px;
+        margin-top: 1.6875rem;
         color: $font-grey;
+
+        @include tablets {
+            margin-top: 1rem;
+        }
     }
 
     &__author {
-        margin-top: 38px;
-        font-size: 18px;
+        margin-top: 2.375rem;
+        font-size: 1.125rem;
         font-weight: 700;
+
+        @include tablets {
+            margin-top: 1rem;
+        }
+    }
+
+    &::before {
+        content: url(./../../img/decor/ellipseWhite.svg);
+        width: 5.1875rem;
+        height: 5.1875rem;
+        margin: auto;
+        right: 0;
+        left: 0;
+        position: absolute;
+        transform: translateY(-50%);
     }
 }

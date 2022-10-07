@@ -1,33 +1,41 @@
 .radio {
     display: flex;
-    margin-right: 16px;
+    margin-right: 1rem;
     align-items: center;
     cursor: pointer;
     user-select: none;
-    margin-bottom: 19px;
+    margin-bottom: 1.1875rem;
+
+    @include tablets {
+        margin-bottom: 24px;
+    }
 
     &__elem {
-        display: none;
+        appearance: none;
 
         &:checked ~ .radio__visible {
             &::before {
                 display: block;
             }
         }
+
+        &:focus ~ .radio__visible {
+            box-shadow: 0 0 3px 3px #eb324e;
+        }
     }
 
     &__visible {
-        width: 26px;
-        height: 26px;
-        margin-right: 10px;
+        width: 1.625rem;
+        height: 1.625rem;
+        margin-right: 0.625rem;
         position: relative;
         background: #fff;
         border-radius: 50%;
         
 
         &::before {
-            width: 13px;
-            height: 13px;
+            width: 0.8125rem;
+            height: 0.8125rem;
             display: none;
             content: "";
             position: absolute;
@@ -42,8 +50,8 @@
     &--checkbox {
         .radio__visible {
             border-radius: 0;
-            width: 24px;
-            height: 24px;
+            width: 1.5rem;
+            height: 1.5rem;
 
             &::before {
                 content: "";

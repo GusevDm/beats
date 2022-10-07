@@ -1,16 +1,25 @@
 .links {
     display: flex;
+    align-items: center;
 
     &__link {
-        width: 30px;
-        height: 30px;
+        width: 1.875rem;
+        height: 1.875rem;
         display: block;
-        margin-right: 10px;
+        margin-right: 0.625rem;
+
+        @include phones {
+            margin-right: 14px;
+        }
+
+        &::last-child {
+            margin-right: 0;
+        }
     }
 
     @each $link in (vk, fb, in, tv) {
         .link_#{$link} {
-            background: url(./../img/links/#{$link}.svg);
+            background: url(./../img/links/#{$link}.svg) center center / contain no-repeat;
         }
     }
 

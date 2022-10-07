@@ -1,3 +1,13 @@
 .video {
-    width: 662px;
+    width: 41.375rem;
+
+    @include tablets {
+        width: 100%;
+    }
+
+    &__elem {
+        @include tablets {
+            width: 90%;
+        }
+    }
 }
