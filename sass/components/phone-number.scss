@@ -28,5 +28,10 @@
         fill: #E01F3D;
         margin-right: 4px;
     }
+
+    @include phones {
+        fill: $font-black;
+        margin-right: 4px;
+    }
 }
 
