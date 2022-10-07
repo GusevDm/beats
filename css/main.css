@@ -592,7 +592,7 @@ a {
   }
   .hero__title::before {
     content: "";
-    background: url(./../../img/content/main-background.png) center center no-repeat;
+    background: url(./../img/content/main-background.png) center center no-repeat;
     background-size: cover;
     width: 20.1875rem;
     height: 20.1875rem;
