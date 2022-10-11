@@ -5,20 +5,9 @@
 
     @include tablets {
         align-items: center;
-    }
 
-    
-
-    
-    .logo {
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-
-}
-
-.phone-number.header__phone-number {
-    @include tablets {
-        display: none;
+        .header__phone-number {
+            display: none;
+        }
     }
 }

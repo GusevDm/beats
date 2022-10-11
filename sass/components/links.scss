@@ -3,8 +3,6 @@
     align-items: center;
 
     &__link {
-        width: 1.875rem;
-        height: 1.875rem;
         display: block;
         margin-right: 0.625rem;
 
@@ -17,9 +15,13 @@
         }
     }
 
-    @each $link in (vk, fb, in, tv) {
-        .link_#{$link} {
-            background: url(./../img/links/#{$link}.svg) center center / contain no-repeat;
+    .link-pic {
+        fill: #b3b3b3;
+        width: 1.875rem;
+        height: 1.875rem;
+
+        &:hover {
+            fill: #000000;
         }
     }
 

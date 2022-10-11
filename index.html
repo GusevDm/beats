@@ -149,12 +149,12 @@
                         <div class="products__col">
                             <img src="./img/products/products_1.png" alt="" class="products__image">
                             <nav class="slider-nav">
-                                <a href="#" class="left-buttun">
+                                <button class="left-buttun">
                                     <img src="./img/left.svg" alt="" class="left__link">
-                                </a>
-                                <a href="#" class="right-buttun">
+                                </button>
+                                <button class="right-buttun">
                                     <img src="./img/right.svg" alt="" class="right__link">
-                                </a>
+                                </button>
                             </nav>
                         </div>
                         <div class="products__col">
@@ -211,7 +211,7 @@
                 <div class="container container--center">
                     <h2 class="section__title">команда</h2>
                     <ul class="command">
-                        <li class="people">
+                        <li class="people people--active">
                             <img src="./img/command/people_1.png" alt="" class="people__image">
                             <div class="people__name">Борис Федорович<img src="./img/pointer.svg" class="pointer"></img></div>
                             <div class="people__desc">
@@ -388,10 +388,26 @@
                             </a>
                         </div>
                         <ul class="links">
-                            <li class="links__item"><a href="#" class="links__link link_vk"></a></li>
-                            <li class="links__item"><a href="#" class="links__link link_fb"></a></li>
-                            <li class="links__item"><a href="#" class="links__link link_in"></a></li>
-                            <li class="links__item"><a href="#" class="links__link link_tv"></a></li>
+                            <li class="links__item"><a href="#" class="links__link link_vk">
+                                <svg class="link-pic">
+                                    <use xlink:href="./img/sprite.svg#vk"></use>
+                                </svg>
+                            </a></li>
+                            <li class="links__item"><a href="#" class="links__link link_fb">
+                                <svg class="link-pic">
+                                    <use xlink:href="./img/sprite.svg#fb"></use>
+                                </svg>
+                            </a></li>
+                            <li class="links__item"><a href="#" class="links__link link_in">
+                                <svg class="link-pic">
+                                    <use xlink:href="./img/sprite.svg#in"></use>
+                                </svg>
+                            </a></li>
+                            <li class="links__item"><a href="#" class="links__link link_tv">
+                                <svg class="link-pic">
+                                    <use xlink:href="./img/sprite.svg#tv"></use>
+                                </svg>
+                            </a></li>
                         </ul>
                     </footer>
                 </div>
@@ -429,5 +445,33 @@
             </li>
         </ul>
     </nav>
+    <nav class="menu menu--adaptive">
+        <ul class="menu__list">
+            <li class="menu__item">
+                <a href="#" class="menu__link">О нас</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">Наушники</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">Команда</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">Цвета</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">Отзывы</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">Как мы работаем</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">Контакты</a>
+            </li>
+        </ul>
+        <a href="#" class="close"></a>
+    </nav>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
