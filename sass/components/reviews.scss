@@ -3,6 +3,9 @@
     &__display {
         background-color: $bg-grey;
         padding: 2.625rem;
+        position: relative;
+        min-height: 200px;
+
 
         @include tablets {
             padding: 56px 23px 41px 23px;
@@ -11,6 +14,13 @@
 
     &__display-inner {
         display: flex;
+        position: absolute;
+        opacity: 0;
+
+        &--active {
+            opacity: 1;
+            position: static;
+        }
 
         @include tablets {
             flex-direction: column;
@@ -65,4 +75,6 @@
         position: absolute;
         transform: translateY(-50%);
     }
+
+    
 }

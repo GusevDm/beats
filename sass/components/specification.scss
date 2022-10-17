@@ -35,6 +35,7 @@
         border-radius: 4px;
         padding: 1rem 0.8125rem 1.125rem 1.125rem;
         display: none;
+        z-index: $specification;
     }
 
     &__item {

@@ -73,6 +73,7 @@
         .pointer {
             transform: rotate(180deg);
         }
+        
 
         @include tablets {
             .people__image {

@@ -1,7 +1,10 @@
+.products__list {
+    position: relative;
+}
+
 .products {
     display: flex;
     justify-content: space-around;
-    position: relative;
     z-index: $products;
 
     @include tablets {
@@ -115,6 +118,7 @@
     right: 0;
     top: 50%;
     transform: translate(0, -50%);
+    z-index: $slider-nav;
 
     @include tablets {
         left: 0;
