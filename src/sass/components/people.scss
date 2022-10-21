@@ -1,0 +1,85 @@
+.people {
+    margin-right: 1.25rem;
+    text-align: center;
+    flex: 1;
+    position: relative;
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &__image {
+        max-width: 100%;
+        width: 13.75rem;
+
+        @include tablets {
+            margin-top: 15px;
+            height: 0;
+        }
+    }
+
+    &__name {
+        font-size: 1.125rem;
+        font-weight: 700;
+        vertical-align: baseline;
+        margin-top: 1.56rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include tablets {
+            order: -1;
+        }
+
+        .pointer {
+            margin-left: 0.25rem;
+            display: inline-block;
+        }
+    }
+
+    &__desc {
+        color: $font-grey;
+        display: none;
+        position: absolute;
+        top: 100%;
+        
+        @include tablets {
+            position: relative;
+            top: auto;
+            margin-top: 10px;
+            width: 222px;
+        }
+
+        &--title {
+            color: $font-black;
+            margin-top: 0.688rem;
+            margin-bottom: 0.25rem;
+        }
+    }
+    
+    &--active {
+        .people__desc {
+            display: block;
+        }
+
+        .pointer {
+            transform: rotate(180deg);
+        }
+        
+
+        @include tablets {
+            .people__image {
+                height: auto;
+            }
+        }
+    }
+
+}

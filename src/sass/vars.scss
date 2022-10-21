@@ -1,0 +1,28 @@
+$font-black: #292929;
+$font-grey: #666666;
+$bg-grey: #f5f5f5;
+$baseFontSize: 16px;
+$fontPlay: "Play";
+$fontAlegreya: "Alegreya Sans";
+
+// breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+
+// mixins
+
+@mixin  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Play";    
+}
+
+
+// z-index
+
+$adaptiveMenu: 100;
+$fix-nav: 99;
+$products: 98;
+$specification:97;
+$slider-nav:96;

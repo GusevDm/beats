@@ -1,0 +1,11 @@
+.colors-section {
+    background: url(./../img/colors/colors-bg.png) right top no-repeat;
+    position: relative;
+    background-size: cover;
+
+    &__title {
+        color: #ffffff;
+        text-align: start;
+        padding-top: 7.1875rem;
+    }
+}

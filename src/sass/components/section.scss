@@ -1,0 +1,21 @@
+.section {
+    height: 100%;
+    display: flex;
+    min-height: 600px;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        font-family: $fontPlay;
+        font-size: 3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 3.3rem;
+        text-align: center;
+
+        @include phones {
+            font-size: 32px;
+        }
+    }
+
+}

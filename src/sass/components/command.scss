@@ -1,0 +1,9 @@
+.command {
+    display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -16px;
+    }
+}

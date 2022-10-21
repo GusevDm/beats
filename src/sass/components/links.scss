@@ -1,0 +1,28 @@
+.links {
+    display: flex;
+    align-items: center;
+
+    &__link {
+        display: block;
+        margin-right: 0.625rem;
+
+        @include phones {
+            margin-right: 14px;
+        }
+
+        &::last-child {
+            margin-right: 0;
+        }
+    }
+
+    .link-pic {
+        fill: #b3b3b3;
+        width: 1.875rem;
+        height: 1.875rem;
+
+        &:hover {
+            fill: #000000;
+        }
+    }
+
+}

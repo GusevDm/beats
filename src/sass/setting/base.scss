@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: $baseFontSize;
+    height: 100%;
+
+    @include tablets {
+        font-size: $baseFontSize - 1px;
+    }
+    
+    @include phones {
+        font-size: $baseFontSize - 2px;
+    }
+}
+
+body {
+    font-family: "Play", sans-serif;
+    height: 100%;
+    font-weight: 400;
+    color: #292929
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: relative;
+ }
+
+ .maincontent {
+    height: 100vh;
+    transition: transform .7s;
+    will-change: transform;
+ }

@@ -1,0 +1,8 @@
+.products-section {
+    background: $bg-grey;
+    padding: 0 5%;
+
+    @include phones {
+        padding: 1%;
+    }
+}

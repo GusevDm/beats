@@ -1,0 +1,117 @@
+.form {
+    display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        width: 29.125rem;
+        margin-top: -1.8125rem;
+    }
+
+    @include phones {
+        width: auto;
+    }
+}
+    
+    .form__col {
+        flex: 1;
+        margin-right: 1.6875rem;
+
+        @include tablets {
+            margin-right: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .form__row {
+        display: flex;
+        margin-bottom: 0.6875rem;
+
+        @include tablets {
+            margin-bottom: 14px;
+        }
+    }
+
+    .form__block {
+        flex: 1;
+        margin-right: 1.0625rem;
+        @include phones {
+            margin-right: 19px;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+    }
+
+
+        .form__title {
+            margin-bottom: 0.375rem;
+        }
+
+        .form__input {
+            width: 100%;
+            border: none;
+            padding: 1.0625rem 0.75rem;
+            border-radius: 4px;
+            border: 3px solid transparent;
+            font-family: "Open Sans";
+
+            @include phones {
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+
+            &:focus {
+                border-color: #E01F3D;
+                outline: none;
+            }
+
+            &--textarea {
+                height: 9.5rem;
+                resize: none;
+                margin-bottom: 1.25rem;
+
+                @include tablets {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+    .form__controls {
+        display: flex;
+        flex-wrap: wrap;
+
+        @include phones {
+            justify-content: center;
+        }
+    }
+
+    .form__buttons {
+        margin-top: 1.6875rem;
+        
+        @include tablets {
+            margin-top: 22px;
+            text-align: center;
+        }
+
+        @include phones {
+            margin-top: 14px;
+        }
+    }
+
+    .button--theme-transparent {
+        padding: 0 0.9375rem;
+    }
+
+
+.input--error {
+    border-color: #E01F3D;
+}
+
+.modal--error {
+    color: #E01F3D;
+}

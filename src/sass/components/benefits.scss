@@ -1,0 +1,56 @@
+.benefits {
+    display: flex;
+    margin-top: 3.875rem;
+
+    @include phones {
+        flex-direction: column;
+    }
+
+    @include tablets {
+        margin-top: 3.25rem;
+    }
+
+
+    &__item {
+        flex: 1;
+        padding: 0 3%;
+        position: relative;
+
+        @include phones {
+            display: flex;
+            padding: 0;
+            align-items: center;
+            margin-bottom: 31px;
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &:last-child {
+            padding-right: 0;
+
+            &::before {
+                display: none;
+            }
+        }
+        
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &::before {
+            position: absolute;
+            top: 3.25rem;
+            right: 0px;
+            content: url(./../img/decor/splitter.svg);
+            transform: translate(50%);
+
+            @include tablets {
+                display: none;
+            }
+        }
+    }
+    
+
+}

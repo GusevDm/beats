@@ -1,0 +1,75 @@
+.hero__title {
+
+    width: 25rem;
+  
+
+    .hero__main-title {
+        font-family: $fontPlay;
+        font-weight: 700;
+        font-size: 3rem;
+        text-transform: uppercase;
+
+        @include tablets {
+            width: 100%;
+            padding: 0 1.5625rem;
+        }
+
+        @include phones {
+            font-size: 32px;
+            padding: 0;
+        }
+    }
+
+    .hero__desc {
+        font-family: 'Alegreya Sans';
+        font-weight: 400;
+        font-size: 1.3125rem;    
+        margin-top: 1.375rem;
+        width: 20.625rem;
+
+        @include tablets {
+            width: 23.1875rem;
+            margin-top: 0.3125rem;
+        }
+
+        @include phones {
+            font-size: 18px;
+            margin-top: 0.875rem;
+        }
+    }
+
+    .button {
+        margin-top: 2.25rem;
+
+        @include tablets {
+            margin-top: 1.4375rem;
+        }
+
+        @include phones {
+            margin-top: 26px;
+        }
+    }
+
+    @include tablets {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &::before {
+            content: "";
+            background: url(./../img/content/main-background.png) center center no-repeat;
+            background-size: contain;
+            width: 20.1875rem;
+            height: 20.1875rem;
+            margin-bottom: 4rem;
+
+            @include phones {
+                margin-bottom: 49px;
+            }
+        }
+    }
+}

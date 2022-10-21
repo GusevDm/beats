@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include tablets {
+        align-items: center;
+
+        .header__phone-number {
+            display: none;
+        }
+    }
+}

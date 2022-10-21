@@ -1,0 +1,133 @@
+.products__list {
+    position: relative;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    z-index: $products;
+
+    @include tablets {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    &__col {
+        flex: 1;
+        padding-left: 3.6875rem;
+        vertical-align: bottom;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        @include tablets {
+            padding-left: 0;
+            text-align: center;
+            position: relative;
+        }
+    }
+
+    &__image {
+        max-width: 100%;
+
+        @include tablets {
+            width: 19.125rem;
+        }
+    }
+
+    &__title {
+        font-size: 2.25rem;
+        text-align: left;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        font-weight: 700;
+
+        @include tablets {
+            text-align: center;
+            margin-top: 49px;
+            font-size: 1.75rem;
+        }
+    }
+
+    &__desc {
+        margin-top: 1.5rem;
+        color: $font-grey;
+        width: 368px;
+
+        @include tablets {
+            margin: 0.875rem auto 0 auto;
+            width: auto;
+        }
+    }
+
+    .products__row {
+        display: flex;
+        margin-top: 1.6875rem;
+
+        @include tablets {
+            justify-content: center;
+        }
+
+        .product__col {
+            margin-right: 5.375rem;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        .product__title {
+            color: $font-grey;
+            font-weight: 400;
+        }
+
+        .product__desc {
+            font-size: 1.125rem;
+            font-weight: 700;
+        }
+
+        .price {
+            font-size: 2.25rem;
+            font-weight: 400;
+            margin-right: 0.8125rem;
+
+            @include phones {
+                font-size: 32px;
+            }
+        }
+
+        &--center {
+            align-items: center;
+
+            @include tablets {
+                margin-top: 24px;
+            }
+        }
+    }
+}
+
+
+
+.slider-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: -5%;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: $slider-nav;
+
+    @include tablets {
+        left: 0;
+        min-width: 267px;
+        width: 82%;
+        margin: 0 auto;
+    }
+
+    @include phones {
+        width: 100%;
+    }
+}

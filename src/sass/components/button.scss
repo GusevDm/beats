@@ -1,0 +1,35 @@
+.button {
+    background: #E01F3D;
+    color: #ffffff;
+    padding: 1.125rem 2.56rem;
+    border-radius: 6.25rem;
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    line-height: 1;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    transition: 0.1s;
+
+    &:hover {
+        background: #fff;
+        color: #E01F3D;
+    }
+
+    &--theme-transparent {
+        background: transparent;
+        color: #fff;
+        text-transform: none;
+
+        @include tablets {
+            color: #E01F3D;
+        }
+
+        &:hover {
+            color: #E01F3D;
+            background: transparent;
+        }
+    }
+}

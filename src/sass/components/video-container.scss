@@ -1,0 +1,18 @@
+.video-container {
+    position: relative;
+    text-align: center;
+
+    &::before {
+        content: url(./../img/decor/polygon.svg);
+        position: absolute;
+        bottom: -1.8125rem;
+        right: 0;
+    }
+
+    .section__title {
+        @include tablets {
+            margin-bottom: 39.8px;
+        }
+    }
+
+}

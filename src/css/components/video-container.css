@@ -1,0 +1,9 @@
+.video-container {
+  position: relative;
+}
+.video-container::before {
+  content: url(../../img/decor/polygon.svg);
+  position: absolute;
+  bottom: -29px;
+  right: 0;
+}

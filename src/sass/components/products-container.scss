@@ -1,0 +1,10 @@
+.products-container {
+    position: relative;
+
+    &::before {
+        content: url(./../img/decor/four.svg);
+        position: absolute;
+        bottom: -1.25rem;
+        right: 0;
+    }
+}

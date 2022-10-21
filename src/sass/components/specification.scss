@@ -1,0 +1,71 @@
+.specification {
+    position: relative;
+    color: #000000;
+
+    @include tablets {
+        display: none;
+    }
+
+    &__button {
+        width: 5.6875rem;
+        height: 5.6875rem;
+        background: #9a9a9a;
+        border-radius: 4px;
+        margin-bottom: 1.5625rem;
+        position: relative;
+        cursor: pointer;
+
+        &::before {
+            content: url(./../img/items/spec.svg);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 42px;
+            height: 42px;
+        }
+
+    }
+
+    &__list {
+        background: rgba(255, 255, 255, 0.92);
+        position: absolute;
+        top: 0;
+        left: 100%;
+        border-radius: 4px;
+        padding: 1rem 0.8125rem 1.125rem 1.125rem;
+        display: none;
+        z-index: $specification;
+    }
+
+    &__item {
+        display: flex;
+        padding: 0.75rem 0.75rem 0.75rem 1rem;
+        align-items: center;
+    }
+
+    &__title {
+        width: 7.9375rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &__feature {
+        width: 3.3125rem;
+        text-align: end;
+    }
+    
+}
+
+.specification__button:hover .specification__list {
+    display: block;
+}
+
+
+
+@each $var in (bluetooth, road, charge, kg, patent) {
+    .specification__#{$var}::before {
+        content: url(./../img/specification/#{$var}.svg);
+        margin-right: 1rem;
+    }
+}

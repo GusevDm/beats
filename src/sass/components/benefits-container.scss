@@ -1,0 +1,10 @@
+.benefits-container {
+    position: relative;
+    
+    &:before {
+        content: url(./../img/decor/tri.svg);
+        position: absolute;
+        bottom: -1rem;
+        left: 0;
+    }
+}
